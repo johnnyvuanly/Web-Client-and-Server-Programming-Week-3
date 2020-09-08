@@ -1,0 +1,20 @@
+/* Remember . for class selector */
+.missile-link {
+    display: block;
+    /* Margins control how much space is between boxes */
+    margin: 20px;
+}
+
+/* Remember # for id selector */
+#real-alert {
+    border-width: thick;
+    border-color: red;
+    color: red;
+    font-size: 24pt;
+}
+
+#test-only {
+    border-width: thick;
+    border-color: green;
+    color: green;
+}
