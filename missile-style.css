@@ -1,0 +1,31 @@
+/* Remember . for class selector */
+.missile-link {
+    display: block;
+    /* Margins control how much space is between boxes */
+    margin: 20px;
+}
+
+/* Remember # for id selector */
+#real-alert {
+    border-width: thick;
+    border-color: red;
+    color: red;
+    font-size: 40pt;
+    border-style: dashed;
+    text-align: center;
+    /* Curves the border of the box to make an oval shape */
+    border-radius: 45%;
+    padding: 10px;
+}
+
+#test-only {
+    border-width: thick;
+    border-color: green;
+    font-size: 20pt;
+    color: green;
+    border-style: solid;
+    text-align: center;
+    border-radius: 45%;
+    /* Space between borders top, right, bottom, left */
+    padding: 10px 1px 10px 1px;
+}

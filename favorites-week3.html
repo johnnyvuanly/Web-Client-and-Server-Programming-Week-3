@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Favorite Things</title>
+        <!-- Link to Bootstrap written in between the header tags -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Link to Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+        <!-- Link to a stylesheet -->
+        <link rel="stylesheet" type="text/css" href="favorite-style.css">
+    </head>
+    
+    <body>
+        
+        <!-- Write Content here. -->
+        
+        <div class="jumbotron">
+        <h1>Some of my favorite things</h1>
+        </div>
+        
+        <h1>By Johnny</h1>
+
+        <pre><code> This is a slight edit of my favorites program in where I add a jumbotron using Bootstrap</code>
+        </pre>
+
+        <div class="favorite-section">
+
+            <h2 class="section-header">Favorite Movie</h2>
+
+            <!-- You can italicize links too! -->
+            <p>I really liked the movie
+                <a href="https://www.rottentomatoes.com/m/requiem_for_a_dream">
+                <span id="favorite-movie-title">Requiem for a Dream</span></a>. Here is a link to Rotton Tomatoes 
+                review on the film. It's mainly on the negative consequences of drugs use, whether
+                it be street drugs or prescribed drugs. 
+            </p>
+        </div>
+
+        <div class="favorite-section">
+            
+            <h2 class="section-header">My Favorite Band/Artist</h2>
+
+            <p>My favorite musical performer is the band 
+                <span id="favorite-music-name">Bring Me The Horizon</span>. Based out of Sheffield England, this
+                former Metalcore/Deathcore band currently has a more modern and mainstream rock sound. Even with 
+                listening to their newer material, you can still hear their metal influence from the past. Their 
+                official website is linked <a href="https://www.bmthofficial.com/">here</a>.
+            </p>
+
+        </div>
+
+        <div class="favorite-section">
+
+        <h2 class="section-header">Favorite Food</h2>
+
+            <ul>
+                <!-- Mulitple elements can be grouped into a class unlike id's -->
+                <li class="second-favorite">Fried Chicken</li>
+                <li class="second-favorite">Sushi</li>
+                <li>Mom's Pho</li>
+                <li>Salmon</li>
+                <!-- id words have to be one word joined with dashes -->
+                <li id="most-favorite-food"> Mochi</li>
+            </ul>
+        
+        </div>
+
+        <div class="favorite-section">
+            
+            <h2 class="section-header">Some Favorite Images</h2>
+            
+            <!-- You can stack class and src on the same tag -->
+            <img class="favorite-image" src="artur-stanulevich-4xKrVqCwqzE-unsplash.jpg" alt="An image of a biking
+            trail inside a forest"> 
+            <img class="favorite-image" src="xps-B5rNNkGtRXI-unsplash.jpg" alt="An image of the slick new Dell XPS 
+            laptops">
+
+
+            
+
+        </div>
+
+        <div class="favorite-section">
+
+            <h2 class="section-header">My Favorite Books</h2>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Buy</th>
+                </tr>
+                <tr>
+                    <td>Ishmael</td>
+                    <td>Daniel Quinn</td>
+                    <td><a href="https://www.amazon.com/Ishmael-Novel-Daniel-Quinn/dp/0553375407/ref=sr_1_1?dchild
+                        =1&keywords=ishmael&qid=1599435047&sr=8-1">Link</a></td>
+                </tr>
+                <tr>
+                    <td>The Subtle Art of Not Giving A F*ck</td>
+                    <td>Mark Manson</td>
+                    <td><a href="https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713/ref=s
+                        r_1_1?crid=2946VLBI0WUIR&dchild=1&keywords=the+subtle+art+of+not+giving+a+fck&qid=15994352
+                        33&sprefix=The+subtle+art%2Caps%2C178&sr=8-1">Link</a></td>
+                </tr>
+                <tr>
+                    <td>The War of Art</td>
+                    <td>Steven Pressfield</td>
+                    <td><a href="https://www.amazon.com/War-Art-Through-Creative-Battles/dp/1936891026/ref=sr_1_1
+                        ?dchild=1&keywords=the+war+of+art&qid=1599435357&sr=8-1">Link</a></td>
+                </tr>
+                
+            </table>
+
+        </div>
+
+
+    </body>
+</html>

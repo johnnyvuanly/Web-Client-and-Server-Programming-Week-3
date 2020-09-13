@@ -1,0 +1,104 @@
+<html>
+    <head>
+        
+        <!-- Remember title tag is shown as the title for a tab -->
+        <title>Conference Registraion Form</title>     
+        <!-- Link to Bootstrap, always add before css style sheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Link to Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pathway+Gothic+One&family=Ranchers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="registration-form-style.css" type="text/css">
+    
+    </head>
+
+    <body>
+        
+        <div class="jumbotron">
+            <h1>Conference Registration Form</h1>
+        </div>
+        
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-sm">
+                    <p> Please register here to reserve a spot for the
+                         conference. We look forward to having you!</p>
+                </div> <!-- First column div -->
+                
+                <div class="col-sm">
+                    
+                    <label for="Name">Registrants Name:</label>
+                    <input type="text" id="Name" name="Name" class="form-control" maxlength="70" required>
+
+                    <br><label for="Password">Password:</label>
+                    <input type="password" id="Password" name="Password" class="form-control" required>
+
+                    <br><label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email" class="form-control" required>
+
+                    <!-- <br><p class="form-text">T-Shirt Size</p>
+                    (I made a mistake. This is what the T-Shirt options would look like as buttons)
+                    <div class="form-check">
+                        <input id="Small T-Shirt" name="Small T-Shirt" type="radio" class="form-check-input" checked>
+                        <label for="Small T-Shirt" class="form-check-label">Small</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="Medium T-Shirt" name="Medium T-Shirt" type="radio" class="form-check-input">
+                        <label for="Medium T-Shirt" class="form-check-label">Medium</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="Large T-Shirt" name="Large T-Shirt" type="radio" class="form-check-input">
+                        <label for="Large T-Shirt" class="form-check-label">Large</label>
+                    </div> -->
+
+                    <br><label for="T-Shirts Size">Pick your shirt size:</label>
+
+                    <select name="T-Shirts Size" id="T-Shirts Size" required>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+
+                    <br><label for="Birthdate">Date of Birth:</label>
+                    <input type="date" id="Birthdate" name="Birthdate" class="form-control" required>
+
+                    <br><p class="form-text">Do you want to recieve emails from the conference sponsers?</p>
+                    <form>
+                        <input type="radio" id="yesEmails" name="emailList" value="yesEmails" required checked>
+                        <label for="yesEmails">Yes</label>
+                        
+                        <input type="radio" id="noEmails" name="emailList" value="noEmails" required>
+                        <label for="noEmails">No</label>
+                    </form>
+
+                </div> <!-- Second Column div -->
+
+                <div class="col-sm">
+                    
+                    <p class="form-text">Are you attend the morning, and/or afternoon conference sessions?</p>
+                    <form>
+                        <input type="checkbox" id="morningSession" name="Sessions" value="morningSession">
+                        <label for="morningSession">Morning</label>
+                        
+                        <input type="checkbox" id="afternoonSession" name="Sessions" value="afternoonSession">
+                        <label for="afternoonSession">Afternoon</label>
+
+                        <input type="checkbox" id="bothSessions" name="Sessions" value="bothSessions">
+                        <label for="bothSessions">Both</label>
+                    </form>
+
+                    <br><label for="specialRequests">Any special requests for the event?</label>
+                        <br><textarea id="specialRequests" class="form-control" rows="7" columns="70">Enter Requests:</textarea>
+
+                    <br><label><input type="submit" id="Submit" name="submit" class="btn btn-outline-primary"></label>
+                    
+                </div> <!-- Third column div -->
+            
+            </div> <!-- Row div -->
+        
+        </div> <!-- Container div -->
+    
+    </body>
+
+</html>

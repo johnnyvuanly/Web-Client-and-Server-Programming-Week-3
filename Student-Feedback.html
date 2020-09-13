@@ -1,23 +1,78 @@
-<form>
-    
-    <P>Enter your name:</P>
-    <input>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- From google fonts. Make sure this is before your style sheet. Can use 
+    multiple fonts this link is used for the two selected -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Syne:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="feedback-style.css" type="text/css">
+</head>
 
-    <p>Enter you email:</p>
-    <input>
+<!-- M-3 makes so that there is a margin on the side of the whole body. Again the 
+    class comes from bootstrap. Info found under spacing on the site -->
+<body class="m-3">
 
-    <p>
-        <br> Comment:
-        <br><textarea></textarea>
+<!-- This class comes from boot strap -->
+<div class="jumbotron">
+    <h1>Student Feedback Form</h1>
+</div>
+
+<div class="row">
+
+<div class="col-lg-5">
+    <!-- Added another div to make things align better using the same margins -->
+    <div class="col-lg-5">
+    <p>You feedback is very useful in helping improve Minneapolis College. 
+    What are some things that you would like addressed?
     </p>
+    </div>
+</div>
 
-    <p> Are you a student?
+
+<div class="col-md-7">
+<!-- Margin left and right. From bootstrap. Useful for resizing windows and getting 
+a consistent look. More simple command is mx-5 for both left, right-->
+<form class="ml-5 mr-5" >
+    
+    <!-- label represents a caption. Before caption below, now on the side -->
+    <label for="name">Enter your name:</label>
+    <!-- name is used to label data values when a form is submitted to a
+    server. Sent as name: value pairs. Ex. "name": Johnny if user entered
+    that word -->
+    <input id="name" name="name" class="form-control">
+
+    <br><label for="email">Enter you email:</label>
+    <input id="email" name="email" class="form-control">
+
+    <br><label>Comment:
+        <!-- Added "required in the text area tags so that user has to enter
+            something" -->
+        <br><textarea required class="form-control"></textarea>
+    </label>
+
+    <p class="form-text"> Are you a student?</p>
+
+    <div class="form-check">
         <!-- Marked with checked at the end so that yes is pre
         selected when page is loaded -->
-        <input name="student" type="radio" checked>Yes
-        <input name="student" type="radio">No
-    </p>
+        <input id="yes" name="current-student" type="radio" class="form-check-input" checked >
+        <label for="yes" class="form-check-label">Yes</label>
+    </div>
+    <div class="form-check">   
+        <input id="no" name="current-student" type="radio" class="form-check-input">
+        <label for="no" class="form-check-label">No</label>
+    </div> 
 
-    <input type="submit">
+    <!-- Added class attribute from bootstrap for button style. You can add as many classes
+    all you have to do is seperate them by space -->
+    <br><lable><input id="submit" name="submit" type="submit" class="btn btn-outline-secondary mt-2"></lable>
 
 </form>
+
+</div> <!-- End of second column -->
+
+</div> <!-- End of row -->
+
+</body>
+
+<!-- Notes 
+Use f12 to inspect elements on the web browser, check margins for example here -->

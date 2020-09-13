@@ -1,0 +1,12 @@
+.jumbotron {
+    background-color: purple;
+    color: rgb(21, 255, 0);
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 60pt;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+    background: rgba(187, 110, 187, 0.863);
+}

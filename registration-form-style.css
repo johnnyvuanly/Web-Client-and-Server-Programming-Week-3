@@ -1,0 +1,12 @@
+.Jumbotron {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff 0%, #ccffff 100%);
+
+}
+
+body {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: large;
+    background: linear-gradient(to bottom, #ffffff 0%, #ccffff 100%);
+}

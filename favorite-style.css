@@ -1,0 +1,88 @@
+p {
+    color: black;
+    font-size: 25px;
+}
+
+h1 {
+    color: aquamarine;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+body {
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: square;
+    text-align: center;
+}
+
+a {
+    background-color: aquamarine;
+    /* No underline for links */
+    text-decoration: none;
+}
+
+/* Getting specific element of the page this is the one of the items in our 
+unordered list */
+#Most-favorite {
+    background-color: lightsalmon;
+    text-decoration: underline;
+}
+
+/* Changing the class elements of the page named second-favorite */
+.second-favorite {
+    background-color:aquamarine;
+}
+
+#favorite-music-name {
+    background-color: aquamarine;
+    font-weight: bold;
+    color: red;
+}
+
+.favorite-section {
+    background-color: lightcyan;
+    /* Line around an element. Width, Color, Style. */
+    border: 3px black double;
+    /* Sepertates an element from its neighbors */
+    margin: 10px;
+    /* Between the border and the content */
+    padding: 15px;
+}
+
+.section-header { 
+    background-color: lightpink;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Use # for id tags */
+#favorite-movie-title {
+    font-style: italic;
+    color: red;
+}
+
+#most-favorite-food {
+    font-style: italic;
+}
+
+/* Use . for class tags */
+.favorite-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.jumbotron {
+    background-color: lightpink;
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+
+}
